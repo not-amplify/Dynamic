@@ -17,7 +17,7 @@ if (!existsSync("./dist")) await import("./esbuild.prod.js");
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 const _v = process.env.npm_package_version;
 const info = { 
   hashShort: `${JSON.stringify(gitCommitInfo().shortHash).replace('"', "").replace("/", "").replace('\"', "")}`,
